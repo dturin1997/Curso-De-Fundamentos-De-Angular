@@ -17,4 +17,12 @@ export class AppComponent {
     avatar:
       'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
   };
+
+  toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+  }
+
+  increaseAge() {
+    this.person.age += 1;
+  }
 }
