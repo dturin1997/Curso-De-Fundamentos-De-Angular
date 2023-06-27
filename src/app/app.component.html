@@ -4,6 +4,16 @@
 <br>
 <p>Edad {{ person.age }}</p>
 <button (click)="increaseAge()">Age ++</button>
+<br>
+<div class="box" (scroll)="onScroll($event)">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae alias ratione ipsa sint? Autem ad aperiam, adipisci fuga, mollitia totam dicta voluptatibus, soluta id et ipsa eaque illo dolores.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ea vitae quas autem beatae ipsam tempora, ratione nobis, unde in distinctio commodi cum eligendi excepturi architecto modi temporibus atque molestias?
+  Maiores necessitatibus totam, amet quia cumque distinctio temporibus vero, quasi porro harum voluptatem! Natus atque facilis, molestias, nulla quia fuga soluta autem excepturi blanditiis assumenda, est molestiae et praesentium ad.
+  Delectus, itaque mollitia expedita cum aliquam quae temporibus veniam odit, repudiandae soluta ullam provident, veritatis distinctio corrupti. Ducimus consectetur magni repellendus, eius, obcaecati excepturi sunt veritatis id mollitia totam pariatur!
+  </p>
+</div>
+<p>Nombre {{ person.name }}</p>
+<input type="text" [value]="person.name" (keyup)="changeName($event)"/>
 <hr>
 <h1>Propiedades</h1>
 <button [disabled]="btnDisabled">Enviar</button>
