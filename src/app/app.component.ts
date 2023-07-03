@@ -13,6 +13,11 @@ export class AppComponent {
   img =
     'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
   btnDisabled = true;
+  register = {
+    name: '',
+    email: '',
+    password: '',
+  };
   person = {
     name: 'Dario',
     age: 26,
@@ -86,5 +91,9 @@ export class AppComponent {
 
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister() {
+    console.log(this.register);
   }
 }
